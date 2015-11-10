@@ -25,7 +25,7 @@
   * http://alu0100498820.github.io
 
 
-> *Enlace web:*
+> *Enlace repositorio:*
 
   * http://alu0100498820.github.io/P6SYTW
 
