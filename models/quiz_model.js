@@ -1,4 +1,4 @@
-var AbstractQuiz = require('models/abstract_quiz_model.js');
+var AbstractQuiz = require('../models/abstract_quiz_model.js');
 
 function Quiz() {
   AbstractQuiz.call(this);
