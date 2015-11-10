@@ -13,3 +13,32 @@ exports.answer = function(req, res) {
   if (current.respuesta(req.query.respuesta)) { c = 'Correcto'; }
   res.render('quizes/answer', {respuesta: c})
 };
+
+exports.questions = function(req,res) {
+  var nPreg = quiz.numQuestions();
+  var cadena = "";
+
+  for(var i=0; i<nPreg; i++) {
+    cadena = cadena.concat("Pregunta " + (i+1) + ": " + quiz.getQ(i) + "<br><br>");
+  }
+
+  res.render('quizes/questions', {prg: cadena})
+};
+
+exports.specificQuestion = function(req, res) {
+  var id = req.params.id;
+  var nPreg = quiz.numQuestions();
+
+  if(id < 1 || id > nPreg){
+    res.render('quizes/SpecificQuestion', {prg: "No existe esa pregunta."})
+  }
+  else if(isNaN(id) === true) {
+    res.render('quizes/SpecificQuestion', {prg: "Error en la URL."})
+  }
+  else {
+    id = id - 1;
+    var cadena = "Pregunta " + (id+1) + ": " + quiz.getQ(id);
+
+    res.render('quizes/SpecificQuestion', {prg: cadena})
+  }
+};
