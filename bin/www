@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-/**
+/***
  * Module dependencies.
  */
 
 var app = require('../app');
-var debug = require('debug')('quiz:server');
+var debug = require('debug')('P6SYTW:server');
 var http = require('http');
 
 /**
