@@ -22,9 +22,11 @@
 
 > [*Enlace a la página personal*](http://alu0100498820.github.io "*Enlace a la página personal*")
 
+---
 
-> [*Enlace repositorio:*](https://github.com/alu0100498820/P6SYTW "*Enlace repositorio:*")
+> [*Enlace repositorio*](https://github.com/alu0100498820/P6SYTW "*Enlace repositorio*")
 
+---
 
 > [*Despliegue de la Aplicación en el IAAS*](http://10.6.128.95:8080/ "*Despliegue de la Aplicación en el IAAS*")
 
