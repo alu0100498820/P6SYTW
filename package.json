@@ -7,11 +7,7 @@
     "start": "node ./bin/www"
     "view": "open http://10.6.128.95:8080/"
   },
-  
-    "engines": {
-    "node": "0.10.24"
-  },
-  
+
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
